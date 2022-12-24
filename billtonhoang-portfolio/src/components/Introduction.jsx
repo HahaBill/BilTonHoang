@@ -4,6 +4,7 @@ import Typist from "react-typist";
 import EmailIcon from '@mui/icons-material/Email';
 import BillModel from "./BillModel"
 import FadeIn from 'react-fade-in';
+import "react-typist/dist/Typist.css";
 
 class Intro extends React.Component {
 

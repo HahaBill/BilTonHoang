@@ -4,6 +4,8 @@ import './App.css'
 import Experience from './components/Experience'
 import Intro from './components/Introduction'
 import SidebarNav from './components/SidebarNav'
+import About from './components/About'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +14,9 @@ function App() {
     <div className='components'>
       <div className='app'>
         <Intro/>
+        <About/>
         <Experience/>
+        <Footer/>
       </div>
       <SidebarNav></SidebarNav>
     </div>
