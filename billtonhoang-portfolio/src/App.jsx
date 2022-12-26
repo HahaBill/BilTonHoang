@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 import Experience from './components/Experience'
 import Intro from './components/Introduction'
 import SidebarNav from './components/SidebarNav'
 import About from './components/About'
 import Footer from './components/Footer'
+import SoftwareCreations from './components/SoftwareCreations'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +16,7 @@ function App() {
         <Intro/>
         <About/>
         <Experience/>
+        <SoftwareCreations/>
         <Footer/>
       </div>
       <SidebarNav></SidebarNav>
