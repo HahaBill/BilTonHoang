@@ -48,7 +48,7 @@
 
 .MuiButtonBase-root {
   outline: none !important;
-  color: var(--lightest-slate) !important;
+  color: white !important;
 }
 
 .PrivateTabIndicator-colorSecondary-5 {
@@ -58,7 +58,7 @@
   background-color: #6AB1FE !important;
 }
 .makeStyles-tabs-2 {
-  border-right: 1px solid var(--lightest-navy) !important;
+  border-right: 1px solid #6AB1FE !important;
 }
 #experience .MuiTab-root {
   padding: 6px 20px;
@@ -70,11 +70,12 @@
 ul {
   list-style: none;
   margin-left: -40px;
+  text-align: left;
 }
 
 .job-description li::before {
   content: "▹    ";
-  color: var(--green-bright);
+  color: #6AB1FE;
   position: absolute;
   left: 0;
 }
@@ -90,7 +91,6 @@ ul {
 .job-description {
   padding-top: 24px;
   max-width: 650px;
-  font-family: "NTR", sans-serif;
   font-size: 20px;
 }
 

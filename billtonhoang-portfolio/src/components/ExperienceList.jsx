@@ -68,6 +68,7 @@ export default function VerticalTabs() {
             location: "Hague/Delft",
             duration: "",
             description: [
+                "Alrsgdgdsgdsgdsgdsgdsgsgsdg",
                 "Technologies : Python, HTML, CSS, Javascript, ReactJS, yarn, TailwindCSS, ROS, Pytorch, Darknet, OpenCV"
             ]
         }
@@ -109,17 +110,15 @@ export default function VerticalTabs() {
                 {experienceList[key]["duration"]}
                 </div>
               </div>
-              <div className=''>
-                <ul className="job-description">
-                  <FadeIn>
-                    {experienceList[key]["description"].map(function (descItem, i) {
-                        return (
-                            <li key={i}>{descItem}</li>
-                        );
-                    })}
-                </FadeIn>
-                </ul>
-              </div>
+              <ul className="job-description">
+                <FadeIn>
+                  {experienceList[key]["description"].map(function (descItem, i) {
+                      return (
+                        <li key={i}>{descItem}</li>
+                      );
+                  })}
+              </FadeIn>
+              </ul>
           </TabPanel>
           ))}
       </Box>
