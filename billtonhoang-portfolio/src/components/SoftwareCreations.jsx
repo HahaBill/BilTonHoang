@@ -2,41 +2,46 @@ import * as React from 'react';
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
-
-import { experimentalStyled as styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
 import './styling.css/SoftwareCreations.css'
+import SwitchForCards from './SwitchForCards'
 
-
-
-// const kprojects = {
-//     GANAesthetic: {
-//         title: "GANAesthetic",
-//         description: ""
-//     },
-//     CollaborativeAI: {
-//         title: "CollaborativeAI",
-//         description: ""
-//     },
-//     SoulBook: {
-//         title: "SoulBook",
-//         description: ""
-//     }
-// }
+const projects = {
+    GANAesthetic: {
+        title: "GANAesthetic",
+        description: ""
+    },
+    CollaborativeAI: {
+        title: "CollaborativeAI",
+        description: ""
+    },
+    SoulBook: {
+        title: "SoulBook",
+        description: ""
+    }
+}
 
 class SoftwareCreations extends React.Component {
     constructor() {
         super();
         this.state = {
           expanded: true,
-          activeKey: "1"
+          activeKey: "1",
+          automaticFlipping: true,
+          allowFlip: false,
         };
         this.handleSelect = this.handleSelect.bind(this);
     }
-      handleSelect(eventKey) {
+    handleSelect(eventKey) {
         this.setState({
           activeKey: eventKey
         });
+    }
+
+    changeFlip = () => {
+        this.setState({
+            automaticFlipping:!this.state.automaticFlipping,
+            allowFlip: !this.state.allowFlip
+        })
     }
     
     render() {
@@ -45,13 +50,14 @@ class SoftwareCreations extends React.Component {
                 <div className="section-header-software">
                     <span className="section-titlee">/ software-creations</span>
                 </div>
+                <SwitchForCards allowAutomaticFlip={this.changeFlip}></SwitchForCards>
                 <Box className='software-box' sx={{ flexGrow: 1 }}>
                     <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                         {Array.from(Array(6)).map((_, index) => (
                         <Grid xs={2} sm={4} md={4} key={index}>
                             <Flippy
-                                flipOnHover={true} // default false
-                                flipOnClick={false} // default false
+                                flipOnHover={this.state.automaticFlipping} // default false
+                                flipOnClick={this.state.allowFlip} // default false
                                 flipDirection="horizontal" // horizontal or vertical
                                 ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
                                 // if you pass isFlipped prop component will be controlled component.
@@ -63,11 +69,10 @@ class SoftwareCreations extends React.Component {
                                     backgroundColor: '#41669d',
                                 }}
                                 >
-                                RICK
+                                
                                 </FrontSide>
                                 <BackSide
                                 style={{ backgroundColor: '#175852'}}>
-                                ROCKS
                                 </BackSide>
                             </Flippy>
                         </Grid>

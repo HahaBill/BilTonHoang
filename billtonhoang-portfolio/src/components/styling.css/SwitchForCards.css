@@ -1,0 +1,16 @@
+.switch-card{
+    position: relative;
+    left:990px;
+}
+
+.MuiSwitch-thumb {
+    position: relative;
+}
+
+.MuiSwitch-switchBase.Mui-checked {
+    background-attachment:red;
+}
+
+.MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
+    background-color: red;
+}
