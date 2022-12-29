@@ -46,7 +46,7 @@ class About extends React.Component {
       "Python",
       "React.js",
       "Java",
-      "Node.js/Express.js",
+      "Node.js",
       "HTML & CSS",
       "ROS",
       "Pytorch",

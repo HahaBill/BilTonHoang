@@ -3,12 +3,16 @@ import ReactSimplyCarousel from 'react-simply-carousel';
 import billpic1 from '../assets/bill_pic1.jpg'
 import billpic2 from '../assets/bill_pic2.jpg'
 import billpic3 from '../assets/bill_pic3.jpg'
-
+import billpic4 from '../assets/bill_james_bond.jpeg'
+import billpic5 from '../assets/team_photo.png'
+ 
 function ReactSimplyCarouselExample() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const bill_pic1_style = {width: '300px', height: '300px'};
   const bill_pic2_style = {width: '300px', height: '300px'};
   const bill_pic3_style = {width: '300px', height: '300px'};
+  const bill_pic4_style = {width: '300px', height: '300px'};
+  const bill_pic5_style = {width: '300px', height: '300px'};
 
   return (
     <div>
@@ -34,7 +38,7 @@ function ReactSimplyCarouselExample() {
             textAlign: 'center',
             width: 30,
           },
-          children: <span>{`>`}</span>,
+          // children: <span>{`>`}</span>,
         }}
         backwardBtnProps={{
           //here you can also pass className, or any other button element attributes
@@ -51,7 +55,7 @@ function ReactSimplyCarouselExample() {
             textAlign: 'center',
             width: 30,
           },
-          children: <span>{`<`}</span>,
+          // children: <span>{`<`}</span>,
         }}
         responsiveProps={[
           {
@@ -72,6 +76,12 @@ function ReactSimplyCarouselExample() {
         </div>
         <div style={{ width: 300, height: 300, background: '#000000' }}>
             <img style={bill_pic3_style}  src={billpic3}></img>
+        </div>
+        <div style={{ width: 300, height: 300, background: '#000000' }}>
+            <img style={bill_pic4_style}  src={billpic4}></img>
+        </div>
+        <div style={{ width: 300, height: 300, background: '#000000' }}>
+            <img style={bill_pic5_style}  src={billpic5}></img>
         </div>
       </ReactSimplyCarousel>
     </div>
