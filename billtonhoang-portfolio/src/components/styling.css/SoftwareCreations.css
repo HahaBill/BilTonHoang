@@ -1,14 +1,8 @@
 #software-creations {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    position: relative;
-    top: 450px;
+
 }
 
 .section-header-software {
-    position: relative;
-    top: -80px;
     font-size: 48px;
     font-weight: bold;
 }

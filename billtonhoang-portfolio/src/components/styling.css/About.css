@@ -1,9 +1,3 @@
-#about {
-    position: relative;
-    top: -500px;
-    left: 5px;
-}
-
 .carousel {
     position: relative;
     top: 90px;
@@ -11,11 +5,10 @@
 }
 
 .section-header-about {
-    position: relative;
-    top: -50px;
-    left: -380px;
     font-size: 48px;
     font-weight: bold;
+    position: relative;
+    left:-375px;
 }
 
 .about-description ul {

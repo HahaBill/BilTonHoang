@@ -100,7 +100,7 @@ export default function VerticalTabs() {
   return (
     <div id="experience-list">
       <Box
-        sx={{ flexGrow: 1, display: 'flex', height: 200, width: 900, position:'relative', top:'-500px'}}
+        sx={{ flexGrow: 1, display: 'flex', position: 'relative', height: 800, width: 900}}
       >
         <Tabs
           orientation="vertical"

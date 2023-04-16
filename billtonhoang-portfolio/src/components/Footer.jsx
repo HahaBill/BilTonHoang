@@ -1,8 +1,7 @@
 import React from "react";
 import "./styling.css/Footer.css";
 
-class Footer extends React.Component {
-  render() {
+function Footer() {
     return (
         <div id="footer">
           <div className="ending-credits">
@@ -12,7 +11,6 @@ class Footer extends React.Component {
           </div>
         </div>
     );
-  }
 }
 
 export default Footer;

@@ -5,9 +5,6 @@
     padding-left: 15%;
     padding-top: 18%;
     min-height: 100vh;
-    position: relative;
-    top: -100px;
-    left: -180px;
 }
 
 .billmodel {
@@ -52,7 +49,7 @@ canvas {
     font-size: 48px;
     position: relative;
     top: 80px;
-    left: -280px;
+    left: -270px;
 }
 
 .intro-desc {
@@ -64,6 +61,7 @@ canvas {
     padding-bottom: 50px;
     position: relative;
     top: 110px;
+    z-index: 0;
 }
 
 .intro-contact {
@@ -94,6 +92,13 @@ canvas {
     align-items: center;
     justify-content: space-evenly;
     color:#6AB1FE;
+}
+
+.intro-image {
+    position: absolute;
+    top: 30px;
+    left: 350px;
+    z-index: -1;
 }
 
 b {
