@@ -1,24 +1,15 @@
 import { useState } from 'react';
 import ReactSimplyCarousel from 'react-simply-carousel';
-<<<<<<< HEAD
 import billpic1 from '../assets/bill_pic1.jpg'
-=======
 import billpic1 from '../assets/bill_circle_camera.jpg'
->>>>>>> re-design
 import billpic2 from '../assets/lunar_zebro_bill.jpeg'
 import billpic3 from '../assets/team_photo.png'
  
 function ReactSimplyCarouselExample() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
-<<<<<<< HEAD
-  const bill_pic1_style = {width: '300px', height: '300px'};
-  const bill_pic2_style = {width: '300px', height: '300px'};
-  const bill_pic3_style = {width: '300px', height: '300px'};
-=======
   const bill_pic1_style = {width: '500px', height: '500px'};
   const bill_pic2_style = {width: '500px', height: '500px'};
   const bill_pic3_style = {width: '500px', height: '500px'};
->>>>>>> re-design
 
   return (
     <div>
