@@ -1,8 +1,19 @@
 #experience {
+<<<<<<< HEAD
 
 }
 
 .section-header-experience {
+=======
+    position: relative;
+    top: 300px;
+    left: 220px;
+}
+
+.section-header-experience {
+    /* display: flex;
+    flex-direction: row; */
+>>>>>>> re-design
     font-size: 48px;
     font-weight: bold;
 }

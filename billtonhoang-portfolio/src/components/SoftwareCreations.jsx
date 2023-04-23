@@ -1,24 +1,9 @@
 import * as React from 'react';
-import Flippy, { FrontSide, BackSide } from 'react-flippy';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Unstable_Grid2';
 import './styling.css/SoftwareCreations.css'
-import SwitchForCards from './SwitchForCards'
-
-const projects = {
-    GANAesthetic: {
-        title: "GANAesthetic",
-        description: ""
-    },
-    CollaborativeAI: {
-        title: "CollaborativeAI",
-        description: ""
-    },
-    SoulBook: {
-        title: "SoulBook",
-        description: ""
-    }
-}
+import ColoredLine from './ColoredLine';
+import FolderOpenRoundedIcon  from '@mui/icons-material/Folder';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import ExternalLinks from './ExternalLinks';
 
 class SoftwareCreations extends React.Component {
     constructor() {
@@ -45,40 +30,63 @@ class SoftwareCreations extends React.Component {
     }
     
     render() {
+        const projects  = {
+            "GANAesthetic": {
+              title: "GANAesthetic",
+              desc:"Incorporating human perceptual factor results in improved image outputs from the generative adversarial neural network (GAN).The GANAesthetic provides an interface with UI component known as sliders, where users can interactively explore aesthetically pleasing satellite images with StyleGAN2.",
+              techStack: "Python, Gradio, Pytorch",
+              link: "https://github.com/HahaBill/ganaesthetic-landshapes",
+              open: "https://colab.research.google.com/drive/1uVWNwtAIFZhM3HjV89xyXVAUfwjlQwIt?usp=sharing",
+              image: "../assets/ice_age.jpg"
+            },
+            Binbot: {
+              title: "Binbot",
+              desc:
+                "It is an control pannel app connected to the robot where the user can observe what the robot is doing via the camera (Intel Realsense D435i) in the UI and the current information about its surroundings. User can also save images, videos and post a comment of a particular robot. It also uses real-time detection algorithm to identify items from its surroundings.",
+              techStack: "Javascript, ReactJS, Python, ROS2, Socket.io, NodeJS, Pytorch",
+              link: "https://github.com/HahaBill/binbot_app",
+              open: "",
+              image: "../assets/twistlock_bin.jpg"
+            },
+          };
+
         return (
             <div id='software-creations'>
                 <div className="section-header-software">
-                    <span className="section-titlee">/ software-creations (In progress)</span>
+                    <span className="section-titlee">/ software-creations</span>
+                    <ColoredLine/>
                 </div>
-                <SwitchForCards allowAutomaticFlip={this.changeFlip}></SwitchForCards>
-                <Box className='software-box' sx={{ flexGrow: 1 }}>
-                    <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-                        {Array.from(Array(6)).map((_, index) => (
-                        <Grid xs={2} sm={4} md={4} key={index}>
-                            <Flippy
-                                flipOnHover={this.state.automaticFlipping} // default false
-                                flipOnClick={this.state.allowFlip} // default false
-                                flipDirection="horizontal" // horizontal or vertical
-                                ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
-                                // if you pass isFlipped prop component will be controlled component.
-                                // and other props, which will go to div
-                                style={{ width: '300px', height: '300px' }} /// these are optional style, it is not necessary
-                            >
-                                <FrontSide
-                                style={{
-                                    backgroundColor: '#41669d',
-                                }}
-                                >
-                                
-                                </FrontSide>
-                                <BackSide
-                                style={{ backgroundColor: '#175852'}}>
-                                </BackSide>
-                            </Flippy>
-                        </Grid>
-                        ))}
-                    </Grid>
-                </Box>
+
+        <div className="project-container">
+          <ul className="projects-grid">
+            {Object.keys(projects).map((key, i) => (
+                <div className="base-card" style={{ 
+                    backgroundImage: `url(${projects[key]["image"]})`,  
+                    backgroundSize: "cover",
+                    borderRadius: "16px",
+                    }}>
+
+                <li className="projects-card">
+                  <div className="card-header">
+                    <div className="folder-icon">
+                      <FolderOpenRoundedIcon
+                        style={{ fontSize: 35, color: "black" }}
+                      ></FolderOpenRoundedIcon>
+                    </div>
+                    <ExternalLinks
+                      githubLink={projects[key]["link"]}
+                      openLink={projects[key]["open"]}
+                    ></ExternalLinks>
+                  </div>
+
+                  <div className="card-title">{key}</div>
+                  <div className="card-desc">{projects[key]["desc"]}</div>
+                  <div className="card-tech">{projects[key]["techStack"]}</div>
+                </li>
+                </div>   
+            ))}
+          </ul>
+        </div>
             </div>
         );
     }

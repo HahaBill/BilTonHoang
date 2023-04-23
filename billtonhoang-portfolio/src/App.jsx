@@ -5,6 +5,7 @@ import SidebarNav from './components/SidebarNav'
 import About from './components/About'
 import Footer from './components/Footer'
 import SoftwareCreations from './components/SoftwareCreations'
+import Ending from './components/Ending'
 
 function App() {
   return (
@@ -14,9 +15,12 @@ function App() {
       <Experience/>
       <SoftwareCreations/>
       <Footer/>
+<<<<<<< HEAD
       <div className='app'>
         
       </div>
+=======
+>>>>>>> re-design
       <SidebarNav></SidebarNav>
     </div>
   )

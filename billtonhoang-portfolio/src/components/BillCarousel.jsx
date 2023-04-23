@@ -1,14 +1,24 @@
 import { useState } from 'react';
 import ReactSimplyCarousel from 'react-simply-carousel';
+<<<<<<< HEAD
 import billpic1 from '../assets/bill_pic1.jpg'
+=======
+import billpic1 from '../assets/bill_circle_camera.jpg'
+>>>>>>> re-design
 import billpic2 from '../assets/lunar_zebro_bill.jpeg'
 import billpic3 from '../assets/team_photo.png'
  
 function ReactSimplyCarouselExample() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+<<<<<<< HEAD
   const bill_pic1_style = {width: '300px', height: '300px'};
   const bill_pic2_style = {width: '300px', height: '300px'};
   const bill_pic3_style = {width: '300px', height: '300px'};
+=======
+  const bill_pic1_style = {width: '500px', height: '500px'};
+  const bill_pic2_style = {width: '500px', height: '500px'};
+  const bill_pic3_style = {width: '500px', height: '500px'};
+>>>>>>> re-design
 
   return (
     <div>
@@ -64,13 +74,13 @@ function ReactSimplyCarouselExample() {
         easing="linear"
       >
         {/* here you can also pass any other element attributes. Also, you can use your custom components as slides */}
-        <div style={{ width: 300, height: 300, background: '#ff80ed' }}>
+        <div style={{ width: 500, height: 500, background: '#ff80ed' }}>
             <img style={bill_pic1_style} src={billpic1}></img>
         </div>
-        <div style={{ width: 300, height: 300, background: '#065535' }}>
+        <div style={{ width: 500, height: 500, background: '#065535' }}>
             <img style={bill_pic2_style}  src={billpic2}></img>
         </div>
-        <div style={{ width: 300, height: 300, background: '#000000' }}>
+        <div style={{ width: 500, height: 500, background: '#000000' }}>
             <img style={bill_pic3_style}  src={billpic3}></img>
         </div>
       </ReactSimplyCarousel>
