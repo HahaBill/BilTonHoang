@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./styling.css/Footer.css";
 
-import sample from '../assets/bill_rainy_video.mp4';
-
 function Footer() {
 
   // const vidRef=useRef();
