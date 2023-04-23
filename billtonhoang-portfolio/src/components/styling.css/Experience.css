@@ -1,15 +1,12 @@
-#experience-list {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+#experience {
     position: relative;
-    top: 350px;
+    top: 300px;
+    left: 220px;
 }
 
 .section-header-experience {
-    position: relative;
-    left: -320px;
-    top: -350px;
+    /* display: flex;
+    flex-direction: row; */
     font-size: 48px;
     font-weight: bold;
 }

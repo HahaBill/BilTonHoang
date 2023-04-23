@@ -1,6 +1,7 @@
 import React from "react";
 import "./styling.css/Experience.css";
 import ExperienceList from "./ExperienceList";
+import ColoredLine from "./ColoredLine";
 
 class Experience extends React.Component {
   constructor() {
@@ -22,6 +23,7 @@ class Experience extends React.Component {
       <div id="experience">
           <div className="section-header-experience">
             <span className="section-title">/ experience</span>
+            <ColoredLine/>
           </div>
           <ExperienceList></ExperienceList>
       </div>

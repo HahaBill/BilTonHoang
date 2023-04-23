@@ -1,20 +1,16 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-.app {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
 
 .components {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
+  width: '100vw';
 }
 
 .logo {

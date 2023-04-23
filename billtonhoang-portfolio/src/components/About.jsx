@@ -2,6 +2,7 @@ import React from "react";
 import "./styling.css/About.css"
 import FadeIn from 'react-fade-in';
 import BillCarousel from './BillCarousel'
+import ColoredLine from "./ColoredLine";
 
 class About extends React.Component {
   constructor() {
@@ -42,7 +43,7 @@ class About extends React.Component {
     const desc_items = [one, two];
 
     const tech_stack = [
-      "Javascript ES6+",
+      "Javascript",
       "Python",
       "React.js",
       "Java",
@@ -62,7 +63,8 @@ class About extends React.Component {
       <div id="about">
         <FadeIn>
           <div className="section-header-about">
-            <span className="section-title">/ about me</span>
+            <span className="section-title">/ about</span>
+            <ColoredLine color='white'/>
           </div>
           <div className="about-content">
             <div className="about-description">
