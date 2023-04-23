@@ -15,12 +15,6 @@ function App() {
       <Experience/>
       <SoftwareCreations/>
       <Footer/>
-<<<<<<< HEAD
-      <div className='app'>
-        
-      </div>
-=======
->>>>>>> re-design
       <SidebarNav></SidebarNav>
     </div>
   )
