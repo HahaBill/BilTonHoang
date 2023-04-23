@@ -37,7 +37,7 @@ class SoftwareCreations extends React.Component {
               techStack: "Python, Gradio, Pytorch",
               link: "https://github.com/HahaBill/ganaesthetic-landshapes",
               open: "https://colab.research.google.com/drive/1uVWNwtAIFZhM3HjV89xyXVAUfwjlQwIt?usp=sharing",
-              image: "/src/assets/ice_age.jpg"
+              image: "../assets/ice_age.jpg"
             },
             Binbot: {
               title: "Binbot",
@@ -46,7 +46,7 @@ class SoftwareCreations extends React.Component {
               techStack: "Javascript, ReactJS, Python, ROS2, Socket.io, NodeJS, Pytorch",
               link: "https://github.com/HahaBill/binbot_app",
               open: "",
-              image: "/src/assets/twistlock_bin.jpg"
+              image: "../assets/twistlock_bin.jpg"
             },
           };
 
