@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import ReactSimplyCarousel from 'react-simply-carousel';
-import billpic1 from '../assets/bill_pic1.jpg'
 import billpic1 from '../assets/bill_circle_camera.jpg'
 import billpic2 from '../assets/lunar_zebro_bill.jpeg'
 import billpic3 from '../assets/team_photo.png'
