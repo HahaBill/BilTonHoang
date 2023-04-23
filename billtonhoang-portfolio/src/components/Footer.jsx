@@ -2,13 +2,8 @@ import React, { useEffect, useRef } from "react";
 import "./styling.css/Footer.css";
 
 function Footer() {
-<<<<<<< HEAD
-=======
-
   // const vidRef=useRef();
   // useEffect(() => { vidRef.current.play(); },[]);
-
->>>>>>> re-design
     return (
         <div id="footer">
           {/* <video className='videoTag' ref={vidRef} autoPlay loop muted>
