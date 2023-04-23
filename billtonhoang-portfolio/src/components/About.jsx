@@ -64,10 +64,7 @@ class About extends React.Component {
         <FadeIn>
           <div className="section-header-about">
             <span className="section-title">/ about</span>
-<<<<<<< HEAD
-=======
             <ColoredLine color='white'/>
->>>>>>> re-design
           </div>
           <div className="about-content">
             <div className="about-description">
