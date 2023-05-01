@@ -4,6 +4,8 @@ import ColoredLine from './ColoredLine';
 import FolderOpenRoundedIcon  from '@mui/icons-material/Folder';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import ExternalLinks from './ExternalLinks';
+import GANAestheticImage from '../assets/ice_age.jpg'
+import BinbotImage from '../assets/twistlock_bin.jpg'
 
 class SoftwareCreations extends React.Component {
     constructor() {
@@ -37,7 +39,7 @@ class SoftwareCreations extends React.Component {
               techStack: "Python, Gradio, Pytorch",
               link: "https://github.com/HahaBill/ganaesthetic-landshapes",
               open: "https://colab.research.google.com/drive/1uVWNwtAIFZhM3HjV89xyXVAUfwjlQwIt?usp=sharing",
-              image: "../assets/ice_age.jpg"
+              image: GANAestheticImage
             },
             Binbot: {
               title: "Binbot",
@@ -46,7 +48,7 @@ class SoftwareCreations extends React.Component {
               techStack: "Javascript, ReactJS, Python, ROS2, Socket.io, NodeJS, Pytorch",
               link: "https://github.com/HahaBill/binbot_app",
               open: "",
-              image: "../assets/twistlock_bin.jpg"
+              image: BinbotImage
             },
           };
 

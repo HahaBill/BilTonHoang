@@ -5,19 +5,12 @@
 }
 
 .section-header-about {
-<<<<<<< HEAD
-    font-size: 48px;
-    font-weight: bold;
-    position: relative;
-    left:-375px;
-=======
     /* display: flex; 
     flex-direction: row; */
     font-size: 48px;
     font-weight: bold;
     position: relative;
     left: 100px;
->>>>>>> re-design
 }
 
 .about-description ul {
