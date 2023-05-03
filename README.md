@@ -1,2 +1,1 @@
-# BilTonHoang
-My personal web portfolio
+# Ton Hoang's Portfolio
