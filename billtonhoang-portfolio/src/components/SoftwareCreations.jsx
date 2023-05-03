@@ -44,8 +44,8 @@ class SoftwareCreations extends React.Component {
             Binbot: {
               title: "Binbot",
               desc:
-                "It is an control pannel app connected to the robot where the user can observe what the robot is doing via the camera (Intel Realsense D435i) in the UI and the current information about its surroundings. User can also save images, videos and post a comment of a particular robot. It also uses real-time detection algorithm to identify items from its surroundings.",
-              techStack: "Javascript, ReactJS, Python, ROS2, Socket.io, NodeJS, Pytorch",
+              "This open-source project aims to simplify the connection between ROS2 and Node.js by providing a user-friendly interface to monitor and control a robot. The app is built using the MERGN stack, which stands for MongoDB, Express.js, React.js, GraphQL, and Node.js. With this stack, the app provides a scalable and maintainable solution that leverages the power of modern web technologies.",
+              techStack: "Javascript, ReactJS, Python, ROS2, Socket.io, NodeJS, Pytorch, GraphQL",
               link: "https://github.com/HahaBill/binbot_app",
               open: "",
               image: BinbotImage
