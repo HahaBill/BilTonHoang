@@ -48,13 +48,12 @@ export default function VerticalTabs() {
         Mendix: {
             jobTitle: "Software developer trainee",
             location: "Rotterdam",
-            duration: "September 2022 - present",
+            duration: "September 2022 - June 2023",
             description: [
-                "Full-stack development with low code platform called Mendix. Working on an audit management appl where we facilitate the process of managing controls, pieces of evidence, and frameworks for the security officer and information suppliers.",
-                "UI/UX: Designing high and low fidelity design for the app in Miro",
-                "Domain modeling: Creating attributes and associations for the entities, relational algebra, and architecture design. Querying data with XPath or OQL ",
-                "Projects: Sync logic between SalesForce and Zuora, SignUp app, Academy app",
-                "Technologies: Mendix, Jira, Confluence, HTML, CSS, Javascript, React.js, PostgresSQL, Java"
+                "Contributed and involved in the design and development of an audit management application used by internal and external auditors.",
+                "Designed and implemented an API for managing automatic synchronization between Salesforce and Zuora. Worked closely with the solution architect and application engineer.",
+                "Improved implementations in existing external applications.",
+                "Technologies and tools: Mendix, PostgresSQL, Jira, Confluence, HTML, CSS, Javascript, Java, Miro, LucidChart. Azure"
             ]
         },
         "Birds.ai": {
@@ -62,10 +61,10 @@ export default function VerticalTabs() {
             location: "Hague",
             duration: "March 2022 - September 2022",
             description: [
-                "Working on various AI projects, currently being involved in the project in the medical environment where surgeons operate.",
-                "The task is to detect the surgeon's faces and blur them due to privacy concerns and make use of AI to know when the procedures starts by the gestures from the surgeon. Creating UI for the customer to operate in and observe detected features.",
-                "Contributed and implemented anonymization algorithm for surgeon's faces using Detectron2 to train Fast-RCNN with pixelated blurring. Researched and processed several datasets containing faces and face masks. Next steps are to create an algorithm to know when operation with incisions and sutures start.",
-                "Technologies : Python, Detectron2, Docker, Pytorch, scikit-learn, V7Darwin, matplotlib, GitLab"
+                "Designed and implemented an anonymization algorithm for surgeon's faces using Detectron2 to train Fast-RCNN with pixelated blurring.",
+                "Researched and processed several datasets containing faces and face masks.",
+                "Creating UI for the customer to operate in and observe detected features and made a demo for CrescentMed.",
+                "Technologies and tools : Pytorch, Jupyter Notebook, Python, Docker, V7 Darwin, Websocket, matplotlib and MLFlow"
             ]
 
         },
