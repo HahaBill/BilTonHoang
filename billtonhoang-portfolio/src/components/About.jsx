@@ -27,10 +27,7 @@ class About extends React.Component {
           {" "}
           Delft University of Technology
         </a>
-        . After graduation, I am working at {" "}
-        <a href="https://www.mendix.com">Mendix</a> as a{" "}
-        <b>Software Developer Trainee</b> while working on my robotic startup <b>Qafka</b> with friends,
-        my role in the team is being <b>Software and Robotics Engineer</b>.
+        .
       </p>
     );
     const two = (
